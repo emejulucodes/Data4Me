@@ -944,14 +944,14 @@
                                               class="loan-main-heading block-title text-left"
                                             >
                                               <p class="small-title mb-0">
-                                                Loan Details
+                                                Data Details
                                               </p>
                                               <h3 class="title-block w-500">
-                                                Loan Interest Calculator
+                                                Credit-To-Data Calculator
                                               </h3>
                                             </div>
                                             <div class="single-loan-slider">
-                                              <h4>Loan Amount</h4>
+                                              <h4>Purchase Amount</h4>
                                               <div
                                                 id="pricipal-total-slide"
                                               ></div>
@@ -960,26 +960,7 @@
                                                 <h6 id="pricipal-id"></h6>
                                               </div>
                                             </div>
-                                            <div class="single-loan-slider">
-                                              <h4>Loan Tenure</h4>
-                                              <div
-                                                id="totalyear-loan-slide"
-                                              ></div>
-                                              <div class="single-loan-counter">
-                                                <h6 id="totalyear-id"></h6>
-                                                <span>Months</span>
-                                              </div>
-                                            </div>
-                                            <div class="single-loan-slider">
-                                              <h4>Fixed Interest Rate</h4>
-                                              <div
-                                                id="interest-total-slide"
-                                              ></div>
-                                              <div class="single-loan-counter">
-                                                <h6 id="interest-id"></h6>
-                                                <span>%</span>
-                                              </div>
-                                            </div>
+                                            
                                           </div>
                                         </div>
                                         <div class="col-md-5">
@@ -988,30 +969,23 @@
                                             data-interest-rate="15"
                                             class="about-one__form about-total-loan-form"
                                           >
-                                            <h3>Mycredit Loan Calculator</h3>
+                                            <h3>Data4Me Credit-To-Data Calculator</h3>
                                             <div
                                               class="about-one__form-content"
                                             >
-                                              <p>
-                                                <span>Ignore this ➡</span>
-                                                <b>₦<i id="emi"></i></b>
-                                              </p>
-                                              <p>
-                                                <span>Total Interest</span>
-                                                <b>₦<i id="tbl_emi"></i></b>
-                                              </p>
+                                              
                                               <p>
                                                 <span
-                                                  >Total Amount Payable</span
+                                                  >Total Data Bundle</span
                                                 >
-                                                <b>₦<i id="tbl_la"></i></b>
+                                                <b><i id="tbl_la"></i>GB</b>
                                               </p>
                                               <a
-                                                href="../apply-now/index.html"
+                                                href="https://paystack.com/pay/data4me"
                                                 class="thm-btn"
                                                 target="_blank"
                                                 rel="nofollow"
-                                                >Apply For Loan</a
+                                                >Buy Data</a
                                               >
                                             </div>
                                           </div>
@@ -1023,10 +997,10 @@
 
                                           $("#pricipal-total-slide").slider({
                                             range: "min",
-                                            min: 5000,
-                                            max: 250000,
-                                            value: 75000,
-                                            step: 100,
+                                            min: 100,
+                                            max: 4500000,
+                                            value: 100,
+                                            step: 50,
                                             slide: function (event, ui) {
                                               $("#pricipal-id").text(ui.value);
                                               loancalculate();
@@ -1038,105 +1012,13 @@
                                             )
                                           );
 
-                                          $("#totalyear-loan-slide").slider({
-                                            range: "min",
-                                            min: 1,
-                                            max: 12,
-                                            value: 6,
-
-                                            slide: function (event, ui) {
-                                              $("#totalyear-id").text(ui.value);
-                                              loancalculate();
-                                            },
-                                          });
-                                          $("#totalyear-id").text(
-                                            $("#totalyear-loan-slide").slider(
-                                              "value"
-                                            )
-                                          );
-
-                                          $("#interest-total-slide").slider({
-                                            range: "min",
-                                            min: 15,
-                                            max: 20,
-                                            value: 18,
-                                            step: 0.01,
-                                            slide: function (event, ui) {
-                                              $("#interest-id").text(ui.value);
-                                              loancalculate();
-                                            },
-                                          });
-                                          $("#interest-id").text(
-                                            $("#interest-total-slide").slider(
-                                              "value"
-                                            )
-                                          );
-
                                           loancalculate();
                                         });
 
                                         function loancalculate() {
                                           var loanAmount =
                                             jQuery("#pricipal-id").text();
-                                          var numberOfMonths =
-                                            jQuery("#totalyear-id").text();
-                                          var rateOfInterest =
-                                            jQuery("#interest-id").text();
-
-                                          var monthlyInterestRatio =
-                                            rateOfInterest / 100 / 12;
-
-                                          var top = Math.pow(
-                                            1 + monthlyInterestRatio,
-                                            numberOfMonths
-                                          );
-                                          var bottom = top - 1;
-                                          var sp = top / bottom;
-                                          var emi =
-                                            loanAmount *
-                                            monthlyInterestRatio *
-                                            sp;
-                                          var full = numberOfMonths * emi;
-                                          var interest = full - loanAmount;
-                                          var int_pge = (interest / full) * 100;
-                                          //$("#tbl_int_pge").html(int_pge.toFixed(2)+" %");
-                                          //$("#tbl_loan_pge").html((100-int_pge.toFixed(2))+" %");
-
-                                          var emi_str = emi
-                                            .toFixed(2)
-                                            .toString()
-                                            .replace(/,/g, "")
-                                            .replace(
-                                              /\B(?=(\d{3})+(?!\d))/g,
-                                              ","
-                                            );
-                                          var loanAmount_str = loanAmount
-                                            .toString()
-                                            .replace(/,/g, "")
-                                            .replace(
-                                              /\B(?=(\d{3})+(?!\d))/g,
-                                              ","
-                                            );
-                                          var full_str = full
-                                            .toFixed(2)
-                                            .toString()
-                                            .replace(/,/g, "")
-                                            .replace(
-                                              /\B(?=(\d{3})+(?!\d))/g,
-                                              ","
-                                            );
-                                          var int_str = interest
-                                            .toFixed(2)
-                                            .toString()
-                                            .replace(/,/g, "")
-                                            .replace(
-                                              /\B(?=(\d{3})+(?!\d))/g,
-                                              ","
-                                            );
-
-                                          jQuery("#emi").html(emi_str);
-                                          jQuery("#tbl_emi").html(int_str);
-                                          jQuery("#tbl_la").html(full_str);
+                                          jQuery("#tbl_la").html(loanAmount);
                                         }
                                       </script>
                                     </div>
@@ -1172,14 +1054,14 @@
                         <div class="info-logo">
                           <img
                             src="../wp-content/uploads/2022/02/IMG_20220217_132654-removebg-preview-1.png"
-                            alt="Mycredit.ngLoan Calculator"
+                            alt="Data4Me Credit-To-Data Calculator"
                             width="155"
                           />
                         </div>
 
                         <p>
-                          Get up to ₦500k instant loans on Mycredit.ng | No BVN
-                          required | No Collateral Required
+                          Get up to 4.5TB instant data bundle on Data4Me | No BVN
+                          required | No Sign up Required
                         </p>
 
                         <div class="footer-widget__about-phone">
@@ -1214,17 +1096,11 @@
                             <a href="../contact-us/index.html">Contact Us</a>
                           </li>
                           <li
-                            id="menu-item-3396"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3396"
-                          >
-                            <a href="../testimonial/index.html">Testimonial</a>
-                          </li>
-                          <li
                             id="menu-item-3392"
                             class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-547 current_page_item menu-item-3392"
                           >
-                            <a href="index.html" aria-current="page"
-                              >Loan Calculator</a
+                            <a href="../about-us/index.html" aria-current="page"
+                              >About Us</a
                             >
                           </li>
                         </ul>
@@ -1250,15 +1126,14 @@
 
                         <li>
                           <a href="#"
-                            ><i class="pylon-icon-clock2"></i>Mon - Sun 8:00 AM
-                            - 6:00 PM</a
+                            ><i class="pylon-icon-clock2"></i>27/7</a
                           >
                         </li>
 
                         <li>
                           <a href="#"
-                            ><i class="pylon-icon-pin1"></i>17 Nwosu Housing
-                            Estate, Amikwo Awka, Anambra</a
+                            ><i class="pylon-icon-pin1"></i>17 Airport Road
+                            Lekki, Lagos</a
                           >
                         </li>
                       </ul>
@@ -1285,32 +1160,16 @@
             <span class="mobile-nav__close mobile-nav__toggler"></span>
             <div class="logo-box">
               <h2 class="mobile-site-title">
-                <a href="../index.html" rel="home">Mycredit.ng</a>
+                <a href="../index.html" rel="home">Data4Me</a>
               </h2>
             </div>
             <!-- /.logo-box -->
             <div class="mobile-nav__container"></div>
             <!-- /.mobile-nav__container -->
-            <ul class="mobile-nav__contact list-unstyled">
-              <li>
-                <i class="pylon-icon-email1"></i>
-                <a href="mailto:needhelp@azino.com">contact@data4me</a>
-              </li>
-              <li>
-                <i class="fab fa-whatsapp"></i>
-                <a href="tel:666-888-0000">666 888 0000</a>
-              </li>
-            </ul>
+
             <!-- /.mobile-nav__contact -->
             <div class="mobile-nav__top">
-              <div class="mobile-nav__social">
-                <a href="#" aria-label="Facebook"
-                  ><i class="fab fa-facebook-square"></i
-                ></a>
-                <a href="#" aria-label="Instagram"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </div>
+              
               <!-- /.mobile-nav__social -->
             </div>
             <!-- /.mobile-nav__top -->
@@ -1327,7 +1186,7 @@
               role="search"
               method="get"
               class="search-form"
-              action="https://mycredit.ng/"
+              action="https://data4me.ng/"
             >
               <label for="search" class="sr-only">search here</label
               ><!-- /.sr-only -->
@@ -1623,6 +1482,4 @@
       id="wpforms-elementor-js"
     ></script>
   </body>
-
-  <!-- Mirrored from mycredit.ng/loan-calculator/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Feb 2022 17:35:39 GMT -->
 </html>
