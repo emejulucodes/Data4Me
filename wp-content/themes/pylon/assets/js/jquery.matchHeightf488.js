@@ -1,6 +1,6 @@
 /**
 * jquery.matchHeight.js master
-* http://brm.io/jquery-match-height/
+* https://brm.io/jquery-match-height/
 * License: MIT
 */
 
