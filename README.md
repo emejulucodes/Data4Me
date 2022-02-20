@@ -1,3 +1,2 @@
 #### Netlify Build [![Netlify Status](https://api.netlify.com/api/v1/badges/79618169-5f9b-4960-a6f7-0da7dd6b43f5/deploy-status)](https://app.netlify.com/sites/data4me/deploys)
 #### WakaTime Stats [![wakatime](https://wakatime.com/badge/user/6887a696-3885-4b54-a72b-318b6f2379be/project/dc04a3d0-2dfe-4b33-a541-7d2bd3be4ba2.svg)](https://wakatime.com/badge/user/6887a696-3885-4b54-a72b-318b6f2379be/project/dc04a3d0-2dfe-4b33-a541-7d2bd3be4ba2)
-#### WakaTime Badge [![wakatime](https://wakatime.com/badge/github/JUEsoft/Data4Me.svg)](https://wakatime.com/badge/github/JUEsoft/Data4Me)
