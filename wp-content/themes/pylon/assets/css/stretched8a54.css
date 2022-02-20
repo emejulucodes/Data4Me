@@ -1,0 +1,31 @@
+.pylon-column-stretched-yes .pylon-stretched-section
+{
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 0;
+	width: auto;
+}
+
+.pylon-column-stretched-yes .pylon-stretched-section:before
+{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	content: "";
+	display: block;
+}
+
+.pylon-column-stretched-left .pylon-stretched-section
+{
+	margin-left: -800px !important;
+	right: 0;
+}
+
+.pylon-column-stretched-right .pylon-stretched-section
+{
+	margin-right: -800px !important;
+	right: 0;
+}

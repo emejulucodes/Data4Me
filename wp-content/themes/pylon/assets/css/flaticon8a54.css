@@ -1,0 +1,432 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 28/01/2021 12:51
+  	*/
+	
+	@font-face {
+	    font-family: "Flaticon";
+	    src: url("../fonts/Flaticon.eot");
+	    src: url("../fonts/Flaticond41d.eot?#iefix") format("embedded-opentype"), url("../fonts/Flaticon.woff2") format("woff2"), url("../fonts/Flaticon.woff") format("woff"), url("../fonts/Flaticon.ttf") format("truetype");
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+	[class^="flaticon-"]:before,
+	[class*=" flaticon-"]:before,
+	[class^="flaticon-"]:after,
+	[class*=" flaticon-"]:after {
+	    font-family: Flaticon;
+	    font-style: normal;
+	}
+	
+	.flaticon-loan:before {
+	    content: "\f100";
+	}
+	
+	.flaticon-growth:before {
+	    content: "\f101";
+	}
+	
+	.flaticon-income:before {
+	    content: "\f102";
+	}
+	
+	.flaticon-loan-1:before {
+	    content: "\f103";
+	}
+	
+	.flaticon-car:before {
+	    content: "\f104";
+	}
+	
+	.flaticon-money-bag:before {
+	    content: "\f105";
+	}
+	
+	.flaticon-mortgage:before {
+	    content: "\f106";
+	}
+	
+	.flaticon-pound:before {
+	    content: "\f107";
+	}
+	
+	.flaticon-saving-money:before {
+	    content: "\f108";
+	}
+	
+	.flaticon-calculator:before {
+	    content: "\f109";
+	}
+	
+	.flaticon-loan-2:before {
+	    content: "\f10a";
+	}
+	
+	.flaticon-money-bag-1:before {
+	    content: "\f10b";
+	}
+	
+	.flaticon-briefcase:before {
+	    content: "\f10c";
+	}
+	
+	.flaticon-loan-3:before {
+	    content: "\f10d";
+	}
+	
+	.flaticon-salary:before {
+	    content: "\f10e";
+	}
+	
+	.flaticon-credit-card:before {
+	    content: "\f10f";
+	}
+	
+	.flaticon-book:before {
+	    content: "\f110";
+	}
+	
+	.flaticon-payment-day:before {
+	    content: "\f111";
+	}
+	
+	.flaticon-loan-4:before {
+	    content: "\f112";
+	}
+	
+	.flaticon-contract:before {
+	    content: "\f113";
+	}
+	
+	.flaticon-mortgage-1:before {
+	    content: "\f114";
+	}
+	
+	.flaticon-property:before {
+	    content: "\f115";
+	}
+	
+	.flaticon-trophy:before {
+	    content: "\f116";
+	}
+	
+	.flaticon-insurance:before {
+	    content: "\f117";
+	}
+	
+	.flaticon-insurance-1:before {
+	    content: "\f118";
+	}
+	
+	.flaticon-online-banking:before {
+	    content: "\f119";
+	}
+	
+	.flaticon-peer-to-peer:before {
+	    content: "\f11a";
+	}
+	
+	.flaticon-real-estate:before {
+	    content: "\f11b";
+	}
+	
+	.flaticon-pos:before {
+	    content: "\f11c";
+	}
+	
+	.flaticon-bank:before {
+	    content: "\f11d";
+	}
+	
+	.flaticon-rate:before {
+	    content: "\f11e";
+	}
+	
+	.flaticon-wallet:before {
+	    content: "\f11f";
+	}
+	
+	.flaticon-interest:before {
+	    content: "\f120";
+	}
+	
+	.flaticon-calendar:before {
+	    content: "\f121";
+	}
+	
+	.flaticon-contract-1:before {
+	    content: "\f122";
+	}
+	
+	.flaticon-contract-2:before {
+	    content: "\f123";
+	}
+	
+	.flaticon-discount-tag:before {
+	    content: "\f124";
+	}
+	
+	.flaticon-car-1:before {
+	    content: "\f125";
+	}
+	
+	.flaticon-give-money:before {
+	    content: "\f126";
+	}
+	
+	.flaticon-mortgage-2:before {
+	    content: "\f127";
+	}
+	
+	.flaticon-real-estate-1:before {
+	    content: "\f128";
+	}
+	
+	.flaticon-cost:before {
+	    content: "\f129";
+	}
+	
+	.flaticon-agreement:before {
+	    content: "\f12a";
+	}
+	
+	.flaticon-atm:before {
+	    content: "\f12b";
+	}
+	
+	.flaticon-processing:before {
+	    content: "\f12c";
+	}
+	
+	.flaticon-loan-5:before {
+	    content: "\f12d";
+	}
+	
+	.flaticon-property-1:before {
+	    content: "\f12e";
+	}
+	
+	.flaticon-dollar:before {
+	    content: "\f12f";
+	}
+	
+	.flaticon-document:before {
+	    content: "\f130";
+	}
+	
+	.flaticon-insurance-2:before {
+	    content: "\f131";
+	}
+	
+	.flaticon-globe:before {
+	    content: "\f132";
+	}
+	
+	.flaticon-value:before {
+	    content: "\f133";
+	}
+	
+	.flaticon-loan-6:before {
+	    content: "\f134";
+	}
+	
+	.flaticon-piggy-bank:before {
+	    content: "\f135";
+	}
+	
+	.flaticon-coin:before {
+	    content: "\f136";
+	}
+	
+	.flaticon-loan-7:before {
+	    content: "\f137";
+	}
+	
+	.flaticon-business-and-finance:before {
+	    content: "\f138";
+	}
+	
+	.flaticon-shed:before {
+	    content: "\f139";
+	}
+	
+	.flaticon-value-1:before {
+	    content: "\f13a";
+	}
+	
+	.flaticon-house:before {
+	    content: "\f13b";
+	}
+	
+	.flaticon-invoice:before {
+	    content: "\f13c";
+	}
+	
+	.flaticon-agent:before {
+	    content: "\f13d";
+	}
+	
+	.flaticon-insurance-3:before {
+	    content: "\f13e";
+	}
+	
+	.flaticon-payment:before {
+	    content: "\f13f";
+	}
+	
+	.flaticon-money:before {
+	    content: "\f140";
+	}
+	
+	.flaticon-sale:before {
+	    content: "\f141";
+	}
+	
+	.flaticon-talk:before {
+	    content: "\f142";
+	}
+	
+	.flaticon-business-and-finance-1:before {
+	    content: "\f143";
+	}
+	
+	.flaticon-loan-8:before {
+	    content: "\f144";
+	}
+	
+	.flaticon-sale-1:before {
+	    content: "\f145";
+	}
+	
+	.flaticon-real-estate-2:before {
+	    content: "\f146";
+	}
+	
+	.flaticon-air-hot-balloon:before {
+	    content: "\f147";
+	}
+	
+	.flaticon-mail:before {
+	    content: "\f148";
+	}
+	
+	.flaticon-save:before {
+	    content: "\f149";
+	}
+	
+	.flaticon-give:before {
+	    content: "\f14a";
+	}
+	
+	.flaticon-opportunities:before {
+	    content: "\f14b";
+	}
+	
+	.flaticon-piggy-bank-1:before {
+	    content: "\f14c";
+	}
+	
+	.flaticon-online-payment:before {
+	    content: "\f14d";
+	}
+	
+	.flaticon-growth-1:before {
+	    content: "\f14e";
+	}
+	
+	.flaticon-piggy-bank-2:before {
+	    content: "\f14f";
+	}
+	
+	.flaticon-protect:before {
+	    content: "\f150";
+	}
+	
+	.flaticon-payment-1:before {
+	    content: "\f151";
+	}
+	
+	.flaticon-discussion:before {
+	    content: "\f152";
+	}
+	
+	.flaticon-save-money:before {
+	    content: "\f153";
+	}
+	
+	.flaticon-suitcase:before {
+	    content: "\f154";
+	}
+	
+	.flaticon-diagram:before {
+	    content: "\f155";
+	}
+	
+	.flaticon-loan-9:before {
+	    content: "\f156";
+	}
+	
+	.flaticon-contract-3:before {
+	    content: "\f157";
+	}
+	
+	.flaticon-lending:before {
+	    content: "\f158";
+	}
+	
+	.flaticon-credit-card-1:before {
+	    content: "\f159";
+	}
+	
+	.flaticon-wallet-1:before {
+	    content: "\f15a";
+	}
+	
+	.flaticon-debit-card:before {
+	    content: "\f15b";
+	}
+	
+	.flaticon-credit-card-2:before {
+	    content: "\f15c";
+	}
+	
+	.flaticon-credit-card-3:before {
+	    content: "\f15d";
+	}
+	
+	.flaticon-salary-1:before {
+	    content: "\f15e";
+	}
+	
+	.flaticon-mobile-phone:before {
+	    content: "\f15f";
+	}
+	
+	.flaticon-get-money:before {
+	    content: "\f160";
+	}
+	
+	.flaticon-online-money:before {
+	    content: "\f161";
+	}
+	
+	.flaticon-invoice-1:before {
+	    content: "\f162";
+	}
+	
+	.flaticon-credit-card-4:before {
+	    content: "\f163";
+	}
+	
+	.flaticon-credit-card-5:before {
+	    content: "\f164";
+	}
+	
+	.flaticon-loan-10:before {
+	    content: "\f165";
+	}
+	
+	.flaticon-car-loan:before {
+	    content: "\f166";
+	}
