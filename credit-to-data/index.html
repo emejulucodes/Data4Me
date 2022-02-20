@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <meta
-    http-equiv="content-type"
-    content="text/html;charset=UTF-8"
-  />
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -837,13 +834,12 @@
                   <a href="../index.html">Home</a>
                 </li>
                 <li
-                    id="menu-item-716"
-                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-716"
-                  >
-                    <a href="https://paystack.com/pay/data4me">Buy Data</a>
-                    <ul class="sub-menu">
-                    </ul>
-                  </li>      
+                  id="menu-item-716"
+                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-716"
+                >
+                  <a href="https://paystack.com/pay/data4me">Buy Data</a>
+                  <ul class="sub-menu"></ul>
+                </li>
                 <li
                   id="menu-item-705"
                   class="menu-item menu-item-type-post_type menu-item-object-page menu-item-705"
@@ -854,7 +850,9 @@
                   id="menu-item-748"
                   class="menu-item menu-item-type-post_type menu-item-object-page menu-item-748"
                 >
-                  <a href="../contact-us/index.html" aria-current="page">Contact Us</a>
+                  <a href="../contact-us/index.html" aria-current="page"
+                    >Contact Us</a
+                  >
                 </li>
               </ul>
             </div>
@@ -960,7 +958,6 @@
                                                 <h6 id="pricipal-id"></h6>
                                               </div>
                                             </div>
-                                            
                                           </div>
                                         </div>
                                         <div class="col-md-5">
@@ -969,16 +966,15 @@
                                             data-interest-rate="15"
                                             class="about-one__form about-total-loan-form"
                                           >
-                                            <h3>Data4Me Credit-To-Data Calculator</h3>
+                                            <h3>
+                                              Data4Me Credit-To-Data Calculator
+                                            </h3>
                                             <div
                                               class="about-one__form-content"
                                             >
-                                              
                                               <p>
-                                                <span
-                                                  >Total Data Bundle</span
-                                                >
-                                                <b><i id="tbl_la"></i>GB</b>
+                                                <span>Total Data Bundle</span>
+                                                <b><i id="tbl_la"></i></b>
                                               </p>
                                               <a
                                                 href="https://paystack.com/pay/data4me"
@@ -998,9 +994,9 @@
                                           $("#pricipal-total-slide").slider({
                                             range: "min",
                                             min: 100,
-                                            max: 4500000,
+                                            max: 450000,
                                             value: 100,
-                                            step: 50,
+                                            step: 100,
                                             slide: function (event, ui) {
                                               $("#pricipal-id").text(ui.value);
                                               loancalculate();
@@ -1015,10 +1011,50 @@
                                           loancalculate();
                                         });
 
+                                        function formatBytes(
+                                          bytes,
+                                          decimals = 2
+                                        ) {
+                                          if (bytes === 0) return "0 Bytes";
+
+                                          const k = 1000;
+                                          const dm =
+                                            decimals < 0 ? 0 : decimals;
+                                          const sizes = [
+                                            "MB",
+                                            "GB",
+                                            "TB",
+                                            "GB",
+                                            "TB",
+                                            "PB",
+                                            "EB",
+                                            "ZB",
+                                            "YB",
+                                          ];
+
+                                          const i = Math.floor(
+                                            Math.log(bytes) / Math.log(k)
+                                          );
+
+                                          return (
+                                            parseFloat(
+                                              (bytes / Math.pow(k, i)).toFixed(
+                                                dm
+                                              )
+                                            ) +
+                                            sizes[i]
+                                          );
+                                        }
+
                                         function loancalculate() {
                                           var loanAmount =
-                                            jQuery("#pricipal-id").text();
-                                          jQuery("#tbl_la").html(loanAmount);
+                                            jQuery("#pricipal-id").text() * 5;
+                                          if (loanAmount > 600) {
+                                            var val = formatBytes(loanAmount);
+                                          } else {
+                                            jQuery("#tbl_la").html("500MB");
+                                          }
+                                          jQuery("#tbl_la").html(val);
                                         }
                                       </script>
                                     </div>
@@ -1060,8 +1096,8 @@
                         </div>
 
                         <p>
-                          Get up to 4.5TB instant data bundle on Data4Me | No BVN
-                          required | No Sign up Required
+                          Get up to 4.5TB instant data bundle on Data4Me | No
+                          BVN required | No Sign up Required
                         </p>
 
                         <div class="footer-widget__about-phone">
@@ -1125,9 +1161,7 @@
                         </li>
 
                         <li>
-                          <a href="#"
-                            ><i class="pylon-icon-clock2"></i>27/7</a
-                          >
+                          <a href="#"><i class="pylon-icon-clock2"></i>27/7</a>
                         </li>
 
                         <li>
@@ -1169,7 +1203,6 @@
 
             <!-- /.mobile-nav__contact -->
             <div class="mobile-nav__top">
-              
               <!-- /.mobile-nav__social -->
             </div>
             <!-- /.mobile-nav__top -->
