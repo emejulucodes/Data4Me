@@ -1029,17 +1029,18 @@
                                       </div>
                                       <script type="text/javascript">
                                        "use strict"
-                                       let url, btn, copy, num;
+                                       let url, btn, copy, num, gen, cop;
                                        url = document.querySelector("#link");
                                        btn = document.querySelector("#ref");
                                        copy = document.querySelector("#clip");
                                        num = document.querySelector("#phone");
                                        btn.addEventListener("click", ()=>{
-                                         let gen = String.fromCharCode(num.value);
-                                         url.setAttribute("value","https://data4me.netlify.app/refer?id="+gen+"");
+                                         gen = "https://data4me.netlify.app/refer?id="+num.value+"";
+                                         url.setAttribute("value",gen);
                                        }, true);
                                        copy.addEventListener("click", ()=>{
-
+                                         url.select();
+                                         document.execCommand('copy')
                                         }, true);
                                       </script>
                                     </div>
