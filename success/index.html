@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit Successful</title>
+    <script src="../node_modules\sweetalert2\dist\sweetalert2.all.js"></script>
+    <link rel="stylesheet" href="../node_modules\sweetalert2\dist\sweetalert2.css">
+    <link
+      rel="icon"
+      href="../wp-content/uploads/2021/01/cropped-favicon-32x32-1-1-150x150.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="../wp-content/uploads/2021/01/cropped-favicon-32x32-1-1-300x300.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="../wp-content/uploads/2021/01/cropped-favicon-32x32-1-1-300x300.png"
+    />
+    <link
+      rel="stylesheet"
+      id="csf-google-web-fonts-css"
+      href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700%7CRajdhani:700&amp;display=swap"
+      media="all"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="https://mycredit.ng/wp-content/uploads/2021/01/cropped-favicon-32x32-1-1-300x300.png"
+    />
+</head>
+<body>
+    <style>
+        
+        body {
+        font-family: "Inter";
+        color: #555c63;
+        font-weight: normal;
+        font-size: 16px;
+      }
+        
+    </style>
+    <script type="text/javascript">
+let timerInterval
+Swal.fire({
+  title: 'Deposit Successful!',
+  text: "Check your phone for an SMS message with your data purchase shortly!",
+  icon: 'success',
+  timer: 5000,
+  timerProgressBar: true,
+  didOpen: () => {
+    
+  },
+  willClose: () => {
+    location.href = "../index.html"
+  }
+}).then((result) => {
+  if (result.dismiss === Swal.DismissReason.timer) {
+    console.log('I was closed by the timer')
+  }
+})
+    </script>
+</body>
+</html>
